@@ -1,0 +1,26 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../block/page.css);
+@import url(../block/nav.css);
+@import url(../block/header.css);
+@import url(../block/skills.css);
+@import url(../block/experience.css);
+@import url(../block/education.css);
+@import url(../block/projects.css);
+@import url(../block/footer.css);
+@import url(../block/location.css);
+@import url(../block/logo.css);
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .header__content {
+    flex-direction: column;
+  }
+
+  .skills__item,
+  .experience__item,
+  .education__item,
+  .projects__item {
+    text-align: left;
+  }
+}

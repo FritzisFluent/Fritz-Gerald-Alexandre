@@ -1,0 +1,32 @@
+/* Header styles */
+.header {
+  background-color: #af9a10;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header__photo {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.header__title {
+  margin: 5px 0;
+  font-size: 2em;
+}
+
+.header__role {
+  margin: 0;
+  font-style: italic;
+}

@@ -1,0 +1,10 @@
+/* Education styles */
+.education {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.education__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
