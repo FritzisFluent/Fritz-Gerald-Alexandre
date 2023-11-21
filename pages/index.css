@@ -1,15 +1,15 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
-@import url(../block/page.css);
-@import url(../block/nav.css);
-@import url(../block/header.css);
-@import url(../block/skills.css);
-@import url(../block/experience.css);
-@import url(../block/education.css);
-@import url(../block/projects.css);
-@import url(../block/footer.css);
-@import url(../block/location.css);
-@import url(../block/logo.css);
+@import url(../pages/index.css);
+@import url(../blocks/nav.css);
+@import url(../blocks/header.css);
+@import url(../blocks/skills.css);
+@import url(../blocks/experience.css);
+@import url(../blocks/education.css);
+@import url(../blocks/projects.css);
+@import url(../blocks/footer.css);
+@import url(../blocks/location.css);
+@import url(../blocks/logo.css);
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
