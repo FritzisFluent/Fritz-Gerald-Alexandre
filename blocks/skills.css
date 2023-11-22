@@ -1,20 +1,44 @@
-/* Skills styles */
-.skills {
-  background-color: #f4f4f4;
-  padding: 20px;
+@keyframes pulse {
+  to {
+    transform: scale(1);
+    opacity: 0.7;
+  }
 }
 
 .skills__title {
   text-align: center;
   margin-bottom: 20px;
 }
-
 .skills__list {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills__item {
-  text-align: center;
-  margin-bottom: 10px;
+  margin: 10px;
+  font-size: 1.5em;
+  transition: transform 0.5s;
+}
+
+.skills__item i {
+  margin-right: 10px;
+  transition: transform 0.5s;
+  color: #4caf50; /* Your theme color */
+}
+
+.skills__item:hover i {
+  transform: scale(1.2);
+  animation: pulse 1s infinite alternate;
+}
+
+.skills__item:hover {
+  transform: scale(1.2);
+  animation: pulse 1s infinite alternate;
+}
+
+.skills__list {
+  background-color: #f9f9f9; /* Latest tech trend color */
 }
