@@ -5,7 +5,17 @@
   }
 }
 
+.skills {
+  /* existing styles */
+  margin-top: 50px; /* add space above the skills section */
+}
+
+.skills:hover {
+  background-color: #9a823b;
+}
+
 .skills__title {
+  color: white;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -26,19 +36,14 @@
 .skills__item i {
   margin-right: 10px;
   transition: transform 0.5s;
-  color: #4caf50; /* Your theme color */
+  color: #edd85f; /* Your theme color */
+}
+.skills__item {
+  margin-bottom: 10px;
+  color: white;
 }
 
 .skills__item:hover i {
   transform: scale(1.2);
   animation: pulse 1s infinite alternate;
-}
-
-.skills__item:hover {
-  transform: scale(1.2);
-  animation: pulse 1s infinite alternate;
-}
-
-.skills__list {
-  background-color: #f9f9f9; /* Latest tech trend color */
 }

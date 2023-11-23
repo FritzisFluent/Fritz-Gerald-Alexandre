@@ -7,8 +7,7 @@
 
 /* Base Header Styles */
 .header {
-  background-color: #fff;
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 10px;
   text-align: center;
   transition: background-color 0.3s;
@@ -31,13 +30,12 @@
   display: flex;
   flex-direction: row-reverse; /* Items aligned in reverse row */
   list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 
 .header__nav a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   margin: 0 10px;
 }
 
