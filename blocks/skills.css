@@ -10,10 +10,6 @@
   margin-top: 50px; /* add space above the skills section */
 }
 
-.skills:hover {
-  background-color: #9a823b;
-}
-
 .skills__title {
   color: white;
   text-align: center;
@@ -36,7 +32,7 @@
 .skills__item i {
   margin-right: 10px;
   transition: transform 0.5s;
-  color: #edd85f; /* Your theme color */
+  color: rgb(255, 217, 0); /* Your theme color */
 }
 .skills__item {
   margin-bottom: 10px;
