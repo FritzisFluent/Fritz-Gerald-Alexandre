@@ -1,10 +1,71 @@
-/* Education styles */
 .education {
-  background-color: #f4f4f4;
   padding: 20px;
+  max-width: 800px; /* Adjust as per your layout */
+  margin: auto;
 }
 
 .education__title {
+  color: white;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 2em; /* make the title slightly larger */
+}
+
+.accordion__title {
+  font-size: 1.2em; /* make the title slightly larger */
+  margin-right: 10px; /* add space to the right of the title */
+}
+
+.accordion__item {
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* space between items */
+}
+
+.accordion__button {
+  background-color: #786b2b; /* dark gray background */
+  color: #fff; /* white text */
+  padding: 15px; /* space inside the button */
+  border: none; /* remove the border */
+  text-align: left; /* align the text to the left */
+  outline: none; /* remove the outline */
+  cursor: pointer; /* change the cursor to a pointer */
+  justify-content: space-between; /* push title and duration to the ends */
+  transition: background-color 0.3s ease; /* smooth transition for the background color */
+}
+
+.accordion__button:hover {
+  background-color: #444; /* slightly darker gray background on hover */
+}
+
+.accordion__button:after {
+  content: "\002B"; /* Unicode character for '+' sign */
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion__button.active:after {
+  content: "\2212"; /* Unicode character for '-' sign */
+}
+
+.accordion__content {
+  padding: 0 15px; /* space inside the content */
+  max-height: 0; /* start with the content hidden */
+  overflow: hidden; /* hide the overflow */
+  transition: max-height 0.3s ease; /* smooth transition for the max-height */
+  background-color: #f1f1f1; /* light gray background */
+}
+
+.accordion__content p {
+  margin: 15px 0;
+  line-height: 1.5; /* Line spacing for readability */
+}
+
+.accordion__duration {
+  font-size: 0.9em; /* make the duration slightly smaller */
+  color: #ccc; /* make the duration lighter */
 }
