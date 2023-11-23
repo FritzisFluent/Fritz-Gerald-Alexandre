@@ -14,9 +14,11 @@
   font-size: 1.2em;
 }
 
+/*
 .header:hover {
   background-color: #9a823b;
 }
+*/
 
 .header__content {
   display: flex;

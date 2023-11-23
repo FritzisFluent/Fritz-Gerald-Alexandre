@@ -1,3 +1,32 @@
+/*  Google Translate API when the user selects a language:
+document
+  .getElementById("language-select")
+  .addEventListener("change", function () {
+    var language = this.value;
+    var textToTranslate = document.querySelector(
+      ".header__description"
+    ).innerText;
+
+    fetch("https://translation.googleapis.com/language/translate/v2", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + YOUR_API_KEY,
+      },
+      body: JSON.stringify({
+        q: textToTranslate,
+        target: language,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        document.querySelector(".header__description").innerText =
+          data.data.translations[0].translatedText;
+      })
+      .catch((error) => console.error(error));
+  });
+*/
+
 // Accordion Layout javascript code for the education section
 document.addEventListener("DOMContentLoaded", function () {
   const accordionButtons = document.querySelectorAll(".accordion__button");

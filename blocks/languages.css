@@ -56,6 +56,26 @@
   width: 80%;
 }
 
+.progress__bar--english {
+  background-color: #4caf50; /* Green */
+}
+
+.progress__bar--french {
+  background-color: #2196f3; /* Blue */
+}
+
+.progress__bar--spanish {
+  background-color: #ff9800; /* Orange */
+}
+
+.progress__bar--haitian-creole {
+  background-color: #9c27b0; /* Purple */
+}
+
+.progress__bar--brazilian-portuguese {
+  background-color: #f44336; /* Red */
+}
+
 @media (max-width: 768px) {
   .language {
     flex-direction: column;

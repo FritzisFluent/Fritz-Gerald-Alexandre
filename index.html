@@ -1,99 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fritz Gerald Alexandre - Front End Developer</title>
-  <link rel="icon" type="image/png" href="/images/favicon1.png" />
-  <link rel="stylesheet" href="./pages/index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body class="page">
-  <header class="header header-flex">
-    <!-- nav bar -->
-    <ul class="header__nav">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-  <div class="header__content">
-    <img src="./images/Fritz3.png" alt="Fritz Gerald Alexandre" class="header__photo" />
-    <div class="header__info">
-      <h1 class="header__title">Fritz Gerald Alexandre</h1>
-      <p class="header__role">Multilingual Junior Front End Developer</p>
-      <p class="header__description">I am a passionate and dedicated front-end developer with expertise in HTML, CSS, and JavaScript. I have experience in designing and developing responsive websites, implementing API integrations, and using version control systems like Git and GitHub. In addition to my technical skills, I speak fluent English, Spanish, French, Haitian Creole and understand Brazilian Portuguese.</p>
-    </div>
-  </div>
-  </header>
-
-
-  <!-- Languages Proficiency -->
- <section id="languages" class="languages">
-  <h2 class="languages__title">Language Proficiency</h2>
-  <ul class="languages__list">
-    <!-- English -->
-    <li class="language">
-      <span>English</span>
-      <span class="flag-icon">🇺🇸</span> <!-- United States Flag Emoji for English -->
-      <div class="progress">
-        <div class="progress__bar progress__bar--english"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fritz Gerald Alexandre - Front End Developer</title>
+    <link rel="icon" type="image/png" href="/images/favicon1.png" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body class="page">
+    <header class="header header-flex">
+      <!-- nav bar -->
+      <div class="header__nav-container">
+        <ul class="header__nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </li>
+      <!-- Language API 
+      <select id="language-select">
+        <option value="en">
+          <span class="flag">🇬🇧</span><span class="language-text"></span>
+        </option>
+        <option value="es">
+          <span class="flag">🇪🇸</span><span class="language-text"></span>
+        </option>
+        <option value="fr">
+          <span class="flag">🇫🇷</span><span class="language-text"></span>
+        </option>
+        <option value="ht">
+          <span class="flag">🇭🇹</span><span class="language-text"></span>
+        </option>
+        <option value="pt">
+          <span class="flag">🇧🇷</span><span class="language-text"></span>
+        </option>
+      </select>
+      -->
 
-    <!-- Spanish -->
-    <li class="language">
-      <span>Spanish</span>
-      <span class="flag-icon">🇪🇸</span> <!-- Spain Flag Emoji for Spanish -->
-      <div class="progress">
-        <div class="progress__bar progress__bar--spanish"></div>
+      <!-- header content -->
+      <div class="header__content">
+        <img
+          src="./images/Fritz3.png"
+          alt="Fritz Gerald Alexandre"
+          class="header__photo"
+        />
+        <div class="header__info">
+          <h1 class="header__title">Fritz Gerald Alexandre</h1>
+          <p class="header__role">Multilingual Junior Front End Developer</p>
+          <p class="header__description">
+            I am a passionate and dedicated front-end developer with expertise
+            in HTML, CSS, and JavaScript. I have experience in designing and
+            developing responsive websites, implementing API integrations, and
+            using version control systems like Git and GitHub. In addition to my
+            technical skills, I speak fluent English, Spanish, French, Haitian
+            Creole and understand Brazilian Portuguese.
+          </p>
+        </div>
       </div>
-    </li>
+    </header>
 
-    <!-- French -->
-    <li class="language">
-      <span>French</span>
-      <span class="flag-icon">🇫🇷</span> <!-- France Flag Emoji for French -->
-      <div class="progress">
-        <div class="progress__bar progress__bar--french"></div>
-      </div>
-    </li>
+    <!-- Languages Proficiency -->
+    <section id="languages" class="languages">
+      <h2 class="languages__title">Language Proficiency</h2>
+      <ul class="languages__list">
+        <!-- English -->
+        <li class="language">
+          <span>English</span>
+          <span class="flag-icon"></span>
+          <!-- United States Flag Emoji for English -->
+          <div class="progress">
+            <div class="progress__bar progress__bar--english"></div>
+          </div>
+        </li>
 
-    <!-- Haitian Creole -->
-    <li class="language">
-      <span>Haitian Creole</span>
-      <span class="flag-icon">🇭🇹</span> <!-- Haiti Flag Emoji for Haitian Creole -->
-      <div class="progress">
-        <div class="progress__bar progress__bar--haitian-creole"></div>
-      </div>
-    </li>
+        <!-- Spanish -->
+        <li class="language">
+          <span>Spanish</span>
+          <span class="flag-icon"></span>
+          <!-- Spain Flag Emoji for Spanish -->
+          <div class="progress">
+            <div class="progress__bar progress__bar--spanish"></div>
+          </div>
+        </li>
 
-    <!-- Brazilian Portuguese -->
-    <li class="language">
-      <span>Brazilian Portuguese</span>
-      <span class="flag-icon">🇧🇷</span> <!-- Brazil Flag Emoji for Brazilian Portuguese -->
-      <div class="progress">
-        <div class="progress__bar progress__bar--brazilian-portuguese"></div>
-      </div>
-    </li>
-  </ul>
-</section>
+        <!-- French -->
+        <li class="language">
+          <span>French</span>
+          <span class="flag-icon"></span>
+          <!-- France Flag Emoji for French -->
+          <div class="progress">
+            <div class="progress__bar progress__bar--french"></div>
+          </div>
+        </li>
 
-  
-  <section id="skills" class="skills">
-    <h2 class="skills__title">Technical Skills</h2>
-    <ul class="skills__list">
-      <li class="skills__item"><i class="fab fa-html5"></i> <span class="skills__item-title">HTML</span></li>
-      <li class="skills__item"><i class="fab fa-css3-alt"></i> <span class="skills__item-title">CSS</span></li>
-      <li class="skills__item"><i class="fab fa-js"></i> <span class="skills__item-title">Javascript</span></li>
-      <li class="skills__item"><i class="fab fa-git-alt"></i> <span class="skills__item-title">Git</span></li>
-      <li class="skills__item"><i class="fab fa-github"></i> <span class="skills__item-title">GitHub</span></li>
-      <li class="skills__item"><i class="fas fa-code-branch"></i> <span class="skills__item-title">Integration</span></li>
-      <li class="skills__item"><i class="fas fa-paint-brush"></i> Figma</li>
-      <li class="skills__item"><i class="fas fa-code"></i> <span class="skills__item-title">VsCode</span></li>
-    </ul>
+        <!-- Haitian Creole -->
+        <li class="language">
+          <span>Haitian Creole</span>
+          <span class="flag-icon"></span>
+          <!-- Haiti Flag Emoji for Haitian Creole -->
+          <div class="progress">
+            <div class="progress__bar progress__bar--haitian-creole"></div>
+          </div>
+        </li>
+
+        <!-- Brazilian Portuguese -->
+        <li class="language">
+          <span>Brazilian Portuguese</span>
+          <span class="flag-icon"></span>
+          <!-- Brazil Flag Emoji for Brazilian Portuguese -->
+          <div class="progress">
+            <div
+              class="progress__bar progress__bar--brazilian-portuguese"
+            ></div>
+          </div>
+        </li>
+      </ul>
     </section>
 
+    <section id="skills" class="skills">
+      <h2 class="skills__title">Technical Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__item">
+          <i class="fab fa-html5"></i>
+          <span class="skills__item-title">HTML</span>
+        </li>
+        <li class="skills__item">
+          <i class="fab fa-css3-alt"></i>
+          <span class="skills__item-title">CSS</span>
+        </li>
+        <li class="skills__item">
+          <i class="fab fa-js"></i>
+          <span class="skills__item-title">Javascript</span>
+        </li>
+        <li class="skills__item">
+          <i class="fab fa-git-alt"></i>
+          <span class="skills__item-title">Git</span>
+        </li>
+        <li class="skills__item">
+          <i class="fab fa-github"></i>
+          <span class="skills__item-title">GitHub</span>
+        </li>
+        <li class="skills__item">
+          <i class="fas fa-code-branch"></i>
+          <span class="skills__item-title">Integration</span>
+        </li>
+        <li class="skills__item"><i class="fas fa-paint-brush"></i> Figma</li>
+        <li class="skills__item">
+          <i class="fas fa-code"></i>
+          <span class="skills__item-title">VsCode</span>
+        </li>
+      </ul>
+    </section>
 
     <!-- Work Experience 
     <section id="experience" class="experience">
@@ -144,44 +205,59 @@
     </section>
     -->
 
-                          <!-- Education -->
+    <!-- Education -->
     <section id="education" class="education">
       <h2 class="education__title">Education</h2>
-  <!-- TripleTen Full-Stack Software Engineer Bootcamp -->
-<div class="accordion__item">
-  <button class="accordion__button">
-      <span class="accordion__title">Full Stack Software Engineer Bootcamp</span>
-      <span class="accordion__duration">01/2023 | Present</span>
-  </button>
-  <div class="accordion__content">
-      <p>Gaining comprehensive skills in full-stack development with TripleTen, including in-depth knowledge of HTML, CSS, JavaScript, and other relevant technologies. Engaging in hands-on projects that emphasize web development and API integration.</p>
-  </div>
-</div>
+      <!-- TripleTen Full-Stack Software Engineer Bootcamp -->
+      <div class="accordion__item">
+        <button class="accordion__button">
+          <span class="accordion__title"
+            >Full Stack Software Engineer Bootcamp</span
+          >
+          <span class="accordion__duration">01/2023 | Present</span>
+        </button>
+        <div class="accordion__content">
+          <p>
+            Gaining comprehensive skills in full-stack development with
+            TripleTen, including in-depth knowledge of HTML, CSS, JavaScript,
+            and other relevant technologies. Engaging in hands-on projects that
+            emphasize web development and API integration.
+          </p>
+        </div>
+      </div>
 
-<!-- CompTIA A+ -->
-<div class="accordion__item">
-  <button class="accordion__button">
-      <span class="accordion__title">CompTIA A+</span>
-      <span class="accordion__duration">05/2019 | 09/2019</span>
-  </button>
-  <div class="accordion__content">
-      <p>Acquired foundational understanding of computer hardware and software, including troubleshooting and problem-solving skills. Earned CompTIA A+ certification.</p>
-  </div>
-</div>
+      <!-- CompTIA A+ -->
+      <div class="accordion__item">
+        <button class="accordion__button">
+          <span class="accordion__title">CompTIA A+</span>
+          <span class="accordion__duration">05/2019 | 09/2019</span>
+        </button>
+        <div class="accordion__content">
+          <p>
+            Acquired foundational understanding of computer hardware and
+            software, including troubleshooting and problem-solving skills.
+            Earned CompTIA A+ certification.
+          </p>
+        </div>
+      </div>
 
-<!-- Network+ -->
-<div class="accordion__item">
-  <button class="accordion__button">
-      <span class="accordion__title">CompTIA Network+</span>
-      <span class="accordion__duration">10/2019 | 02/2020</span>
-  </button>
-  <div class="accordion__content">
-      <p>Acquired foundational understanding of networking, including protocols, infrastructure components, and network operations. Developed skills in network troubleshooting and tools.</p>
-  </div>
-</div>
-  </section>
-  
-                                 <!-- Projects -->
+      <!-- Network+ -->
+      <div class="accordion__item">
+        <button class="accordion__button">
+          <span class="accordion__title">CompTIA Network+</span>
+          <span class="accordion__duration">10/2019 | 02/2020</span>
+        </button>
+        <div class="accordion__content">
+          <p>
+            Acquired foundational understanding of networking, including
+            protocols, infrastructure components, and network operations.
+            Developed skills in network troubleshooting and tools.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
     <section id="projects" class="projects">
       <h2 class="projects__title">Featured Projects</h2>
       <div class="projects__container">
@@ -247,7 +323,7 @@
   </div>
 </section> -->
 
-<!-- Footer-->
+    <!-- Footer-->
     <footer class="footer">
       <div class="footer__content">
         <p class="footer__contact">
