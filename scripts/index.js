@@ -27,6 +27,16 @@ document
   });
 */
 
+// Scroll down effect for the about section.
+window.addEventListener("scroll", function () {
+  const aboutElement = document.querySelector(".about");
+  if (window.scrollY > 0) {
+    aboutElement.classList.add("scrolled");
+  } else {
+    aboutElement.classList.remove("scrolled");
+  }
+});
+
 // Accordion Layout javascript code for the education section
 document.addEventListener("DOMContentLoaded", function () {
   const accordionButtons = document.querySelectorAll(".accordion__button");

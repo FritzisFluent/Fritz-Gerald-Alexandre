@@ -1,0 +1,41 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.about {
+  margin: 0 auto; /* Center the element horizontally */
+  margin-bottom: 20px;
+  background-color: #d9a50a;
+  padding: 20px;
+  border-radius: 5px;
+  align-items: center;
+  width: 80%;
+  transition: background-color 0.3s ease; /* Add transition effect */
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: fade-in 1s forwards; /* Apply fade-in animation */
+}
+
+.about:hover {
+  background-color: #f5c542; /* Change background color on hover */
+}
+
+.about__title {
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.about__description {
+  font-size: 16px;
+  color: black;
+}
+
+.about.scrolled {
+  background-color: #f5c542; /* Change background color when scrolled */
+}

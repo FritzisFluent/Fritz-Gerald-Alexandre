@@ -63,10 +63,6 @@
   color: rgb(255, 0, 0);
 }
 
-.header__description:hover {
-  color: rgb(239, 200, 3);
-}
-
 /* Responsive Design for Header */
 @media (max-width: 600px) {
   .header {
