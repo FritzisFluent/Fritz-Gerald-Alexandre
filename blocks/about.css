@@ -8,13 +8,22 @@
 }
 
 .about {
-  background-color: #9e833a;
+  background-color: #a67f11;
   margin: 0 auto; /* Center the element horizontally */
   margin-bottom: 15px;
+  width: 80%;
   align-items: center;
   transition: background-color 0.3s ease; /* Add transition effect */
   opacity: 0; /* Set initial opacity to 0 */
   animation: fade-in 1s forwards; /* Apply fade-in animation */
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .about__title {
@@ -26,10 +35,10 @@
 
 .about__description {
   margin: 0 auto; /* Center the element horizontally */
-  width: 80%;
-  font-size: 16px;
-  color: rgb(255, 247, 5);
+  font-size: 14px;
+  color: white;
   padding: 10px;
+  font-weight: lighter;
 }
 
 .about__description:hover {
