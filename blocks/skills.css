@@ -1,45 +1,103 @@
-@keyframes pulse {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
   to {
-    transform: scale(1);
-    opacity: 0.7;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .skills {
-  /* existing styles */
-  margin-top: 50px; /* add space above the skills section */
+  color: white;
+  padding: 20px;
+  background-color: #a67f11;
+  text-align: center;
+}
+
+.skills--visible {
+  animation: fadeIn 1s ease-out forwards;
 }
 
 .skills__title {
-  color: white;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
-.skills__list {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  align-items: center;
   justify-content: center;
 }
 
 .skills__item {
-  margin: 10px;
-  font-size: 1.5em;
-  transition: transform 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.skills__item i {
-  margin-right: 10px;
-  transition: transform 0.5s;
-  color: rgb(255, 217, 0); /* Your theme color */
-}
-.skills__item {
-  margin-bottom: 10px;
-  color: white;
+.skills__icon {
+  font-size: 3rem; /* Large size for icons */
+  margin-bottom: 0.5em;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.skills__item:hover i {
-  transform: scale(1.2);
-  animation: pulse 1s infinite alternate;
+.skills__icon:hover {
+  transform: scale(1.2); /* Icons grow bigger on hover */
+}
+.skills__item-title {
+  font-size: 1rem; /* Adjust as necessary */
+}
+
+/* CSS for Icons with Brand Colors */
+
+.skills__icon.fa-html5 {
+  color: #e34c26; /* HTML5 Brand Color */
+}
+
+.skills__icon.fa-css3-alt {
+  color: #1572b6; /* CSS3 Brand Color */
+}
+
+.skills__icon.fa-square-js, /* If 'fa-square-js' does not exist, replace with 'fa-js' */
+.skills__icon.fa-js {
+  color: #f7df1e; /* JavaScript Brand Color */
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2); /* JS icon may need a shadow for contrast */
+}
+
+.skills__icon.fa-github {
+  color: #181717; /* GitHub Brand Color */
+}
+
+.skills__icon.fa-git {
+  color: #f05032; /* Git Brand Color */
+}
+
+.skills__icon.fa-cloud {
+  color: #3582b5; /* Generic Cloud/API Color, adjust as preferred */
+}
+
+.skills__icon.fa-code {
+  color: #007acc; /* VS Code Brand Color, adjust as needed */
+}
+
+/* Figma icon color */
+.skills__icon.fa-figma {
+  color: #f24e1e; /* Figma Brand Color */
+}
+
+/* Adjustments for tablet screens */
+@media (max-width: 768px) {
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 480px) {
+  .skills__grid {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+  }
 }

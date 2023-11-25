@@ -37,6 +37,25 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// Scroll down effect for the skills section.
+document.addEventListener("DOMContentLoaded", (event) => {
+  const skillsSection = document.querySelector(".skills"); // Select the skills section
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("skills--visible"); // Add class when in view
+          observer.unobserve(entry.target); // Optional: Stop observing after it becomes visible
+        }
+      });
+    },
+    { threshold: 0.1 }
+  ); // Trigger when 10% of the skills section is visible
+
+  skillsSection.style.opacity = 0; // Set initial opacity to 0 for fade-in effect
+  observer.observe(skillsSection); // Observe the skills section
+});
+
 // Accordion Layout javascript code for the education section
 document.addEventListener("DOMContentLoaded", function () {
   const accordionButtons = document.querySelectorAll(".accordion__button");
