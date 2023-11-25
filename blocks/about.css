@@ -8,34 +8,30 @@
 }
 
 .about {
+  background-color: #9e833a;
   margin: 0 auto; /* Center the element horizontally */
-  margin-bottom: 20px;
-  background-color: #d9a50a;
-  padding: 20px;
-  border-radius: 5px;
+  margin-bottom: 15px;
   align-items: center;
-  width: 80%;
   transition: background-color 0.3s ease; /* Add transition effect */
   opacity: 0; /* Set initial opacity to 0 */
   animation: fade-in 1s forwards; /* Apply fade-in animation */
 }
 
-.about:hover {
-  background-color: #f5c542; /* Change background color on hover */
-}
-
 .about__title {
   text-align: center;
   font-size: 24px;
-  color: black;
-  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
 }
 
 .about__description {
+  margin: 0 auto; /* Center the element horizontally */
+  width: 80%;
   font-size: 16px;
-  color: black;
+  color: rgb(255, 247, 5);
+  padding: 10px;
 }
 
-.about.scrolled {
-  background-color: #f5c542; /* Change background color when scrolled */
+.about__description:hover {
+  background-color: #9e833a; /* Change background color on hover */
 }
