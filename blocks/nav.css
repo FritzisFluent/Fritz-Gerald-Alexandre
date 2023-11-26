@@ -1,17 +1,69 @@
+/* General Styles */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  background-color: #333;
-  padding: 20px 20px;
+  background-color: #a67f11;
+  padding: 0.5em 1em;
 }
 
-.navbar__link {
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 0.5em 1em;
   color: white;
   text-decoration: none;
-  margin: 0 10px;
 }
 
-.navbar__link:hover {
-  color: #4caf50;
+/* Hamburger button */
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* Show the menu when hamburger is clicked */
+.nav-menu.show {
+  display: flex;
+  flex-direction: column;
+}
+
+/* This class should be toggled by JavaScript on the .nav-menu */
+.show {
+  display: block; /* or 'flex' if you want a flexbox layout */
+}
+
+/* Hamburger menu styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+  }
+
+  .nav-menu li a {
+    padding: 0.5em;
+    border-bottom: 1px solid #777;
+    text-align: center;
+  }
+
+  .nav-menu li:last-child a {
+    border-bottom: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }

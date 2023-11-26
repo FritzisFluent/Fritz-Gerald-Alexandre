@@ -28,20 +28,6 @@
   margin-bottom: 15px;
 }
 
-/* Navigation Menu Styles */
-.header__nav {
-  display: flex;
-  flex-direction: row-reverse; /* Items aligned in reverse row */
-  list-style-type: none;
-  padding: 0;
-}
-
-.header__nav a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  margin: 0 10px;
-}
-
 /* Header Photo Styles */
 .header__photo {
   width: 250px;
@@ -69,18 +55,5 @@
   .header {
     padding: 10px;
     font-size: 1.2em;
-  }
-
-  .header__nav {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .header__nav #navList {
-    display: none;
-  }
-
-  .header__nav #navList.active {
-    display: block;
   }
 }
