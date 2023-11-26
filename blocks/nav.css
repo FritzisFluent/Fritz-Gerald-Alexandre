@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: space-between;
-  padding: 1em;
+  padding-right: 15px;
+  justify-content: flex-end;
   background-color: #a67f11;
   color: #fff;
   z-index: 1000; /* Add this */
@@ -28,6 +28,7 @@
 .nav-link {
   color: #fff;
   text-decoration: none;
+  font-size: 0.8em;
 }
 
 @media (max-width: 768px) {
@@ -36,12 +37,6 @@
   }
 
   .nav-menu {
-    background-color: rgba(
-      255,
-      255,
-      255,
-      0.8
-    ); /* Light transparent background */
     position: absolute;
     right: 0; /* Add this */
     top: 100%; /* Add this */
