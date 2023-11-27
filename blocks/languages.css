@@ -9,7 +9,7 @@
 
 .languages {
   margin: 0 auto; /* Center the element horizontally */
-  width: 80%;
+  max-width: 800px;
   color: white;
   text-align: center;
   align-items: center;
