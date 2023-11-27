@@ -43,7 +43,3 @@
   padding: 10px;
   font-weight: lighter;
 }
-
-.about__description:hover {
-  background-color: #9e833a; /* Change background color on hover */
-}

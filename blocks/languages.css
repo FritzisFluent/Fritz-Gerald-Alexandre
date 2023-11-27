@@ -1,11 +1,18 @@
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .languages {
   margin: 0 auto; /* Center the element horizontally */
-  margin-bottom: 15px;
   width: 80%;
   color: white;
   text-align: center;
   align-items: center;
-  padding: 20px;
 }
 
 .languagues__content {
@@ -21,19 +28,28 @@
 }
 
 .languages__list {
-  list-style: none;
-  padding: 0;
+  display: block;
 }
 
 .language {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  animation: slideIn 1s ease-in-out;
 }
 
 .language span {
   margin-right: 10px;
+}
+
+.language:last-child {
+  grid-column: span 2;
+  text-align: center;
+}
+
+.flag-icon {
+  font-size: 3em; /* Increase the size of the flag emoji */
+  margin-right: 10px; /* Adjust margin as needed */
 }
 
 .progress {
@@ -91,10 +107,15 @@
 
 @media (max-width: 768px) {
   .language {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .progress {
     width: 100%;
+  }
+
+  flag-icon {
+    font-size: 2em; /* Smaller flags for mobile devices */
   }
 }

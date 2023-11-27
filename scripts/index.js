@@ -11,6 +11,22 @@ hamburger.addEventListener("click", function () {
   }
 });
 
+// Slide-in effect for the languages section.
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("slideIn");
+    } else {
+      entry.target.classList.remove("slideIn");
+    }
+  });
+});
+
+document.querySelectorAll(".language").forEach((language) => {
+  observer.observe(language);
+});
+
 // Scroll down effect for the skills section.
 document.addEventListener("DOMContentLoaded", (event) => {
   const skillsSection = document.querySelector(".skills"); // Select the skills section

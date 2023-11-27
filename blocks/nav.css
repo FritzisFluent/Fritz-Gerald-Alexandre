@@ -28,7 +28,7 @@
 .nav-link {
   color: #fff;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 
 @media (max-width: 768px) {
@@ -47,7 +47,8 @@
   }
 
   .nav-link {
-    color: #a67f11;
+    color: green;
+    font-weight: bold;
   }
 
   .nav-menu.show {
