@@ -10,9 +10,7 @@
 }
 
 .skills {
-  color: white;
   padding: 20px;
-  background-color: #a67f11;
   text-align: center;
 }
 
@@ -50,6 +48,7 @@
   transform: scale(1.2); /* Icons grow bigger on hover */
 }
 .skills__item-title {
+  color: white;
   font-size: 1rem; /* Adjust as necessary */
 }
 

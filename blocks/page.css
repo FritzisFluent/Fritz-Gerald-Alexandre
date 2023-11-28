@@ -4,7 +4,8 @@
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: black;
+  color: #ffd700; /* Metallic Gold */
+  background-color: #020c1b; /* Dark Navy Blue */
   font-size: 1em;
-  color: #999;
+  color: #ffd700; /* Metallic Gold */
 }

@@ -1,11 +1,11 @@
 /* Projects styles */
 .projects {
-  background-color: #a67f11;
   color: white;
   padding: 20px;
 }
 
 .projects__title {
+  color: #ffd700; /* Metallic Gold */
   text-align: center;
   margin-bottom: 20px;
   font-size: 2em;
@@ -22,16 +22,14 @@
   flex: 1;
   min-width: 280px; /* Minimum width of each card */
   max-width: 320px; /* Maximum width of each card */
-  background-color: rgb(0, 0, 0);
   padding: 15px;
   border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 8px 0px rgba(212, 175, 55, 0.6);
 }
 
 .project__name {
@@ -39,7 +37,8 @@
 }
 
 .project__link {
-  color: #d9a50a;
+  font-weight: bold;
+  color: white;
   font-weight: bold;
   text-decoration: none;
 }
@@ -49,6 +48,6 @@
 }
 
 .project__description {
+  font-style: italic;
   margin-top: 5px;
-  color: #ffffff;
 }
