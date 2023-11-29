@@ -41,3 +41,7 @@
   padding: 10px;
   font-weight: lighter;
 }
+
+.about__description:last-child {
+  margin-left: 0;
+}

@@ -6,12 +6,11 @@
 @import url(../blocks/header.css);
 @import url(../blocks/about.css);
 @import url(../blocks/skills.css);
-@import url(../blocks/experience.css);
-@import url(../blocks/education.css);
 @import url(../blocks/resume.css);
 @import url(../blocks/projects.css);
-@import url(../blocks/footer.css);
+@import url(../blocks/contact.css);
 @import url(../blocks/location.css);
+@import url(../blocks/footer.css);
 @import url(../blocks/logo.css);
 
 /* Responsive design */
