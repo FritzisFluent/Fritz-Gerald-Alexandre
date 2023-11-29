@@ -69,11 +69,11 @@
 }
 
 .skills__icon.fa-github {
-  color: #181717; /* GitHub Brand Color */
+  color: #e1dddd;
 }
 
 .skills__icon.fa-git {
-  color: #f05032; /* Git Brand Color */
+  color: #575757;
 }
 
 .skills__icon.fa-cloud {

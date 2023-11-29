@@ -1,0 +1,82 @@
+/* Resume Highlights Section */
+.resume {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.resume__title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.resume__subsection {
+  margin-bottom: 20px;
+}
+
+.resume__subtitle {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.resume__list {
+  list-style: none;
+  padding: 0;
+}
+
+.resume__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #00af91;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #43a047;
+}
+
+.resume__role,
+.resume__certification {
+  color: white;
+}
+
+.resume__institution {
+  font-style: italic;
+  color: white;
+}
+
+.resume__duration {
+  color: #ffd700;
+}
+
+.resume__description {
+  color: white;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.resume__download-button {
+  display: block;
+  width: max-content;
+  margin: 20px auto;
+  padding: 20px 15px;
+  background-color: #00af91;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Hover effect for the download button */
+.resume__download-button:hover {
+  background-color: #43a047;
+}
