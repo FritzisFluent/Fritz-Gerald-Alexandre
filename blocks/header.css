@@ -16,18 +16,15 @@
 
 /* Base Header Styles */
 .header {
-  margin-bottom: 20px;
+  padding-bottom: 10px;
   text-align: center;
   transition: background-color 0.3s;
   font-size: 2em;
-  margin-bottom: 10px;
 }
 
-/*
 .header:hover {
-  background-color: #9a823b;
+  background-color: darkblue;
 }
-*/
 
 .header__content {
   display: flex;
@@ -168,6 +165,12 @@
     font-size: 0.8em;
   }
   .languages__list {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__title {
     font-size: 1.2em;
   }
 }

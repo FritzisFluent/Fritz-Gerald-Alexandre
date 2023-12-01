@@ -45,6 +45,10 @@
   border: none;
 }
 
+.spotify-playlist__iframe:hover {
+  background-color: darkblue;
+}
+
 @media (max-width: 995px) {
   .spotify-playlist__description {
     margin: 0 auto;
