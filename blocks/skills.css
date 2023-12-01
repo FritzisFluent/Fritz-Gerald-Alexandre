@@ -19,16 +19,15 @@
 }
 
 .skills__title {
+  background-color: #020c1b;
   margin-bottom: 1em;
   font-size: 2em;
 }
 
-.skills__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
+.skills-list__items {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .skills__item {
@@ -73,7 +72,7 @@
 }
 
 .skills__icon.fa-git {
-  color: #575757;
+  color: #f34f29; /* Git Brand Color */
 }
 
 .skills__icon.fa-cloud {
@@ -93,5 +92,12 @@
 @media (max-width: 768px) {
   .skills__grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+  .skills-list__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
   }
 }

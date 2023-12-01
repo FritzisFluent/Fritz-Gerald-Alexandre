@@ -1,0 +1,78 @@
+/* Spotify Playlist Section Styles */
+.spotify-playlist {
+  background-color: #f4f4f4; /* or any color that fits your theme */
+  padding: 40px;
+  text-align: center;
+}
+
+.spotify-playlist__title {
+  font-size: 2em;
+  color: #333; /* Dark color for the title */
+  margin-bottom: 20px;
+}
+
+.spotify-playlist__photo {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.spotify-playlist__description {
+  margin-left: 20px;
+  font-size: 16px; /* Readable text size */
+  color: #666; /* Slightly lighter color for the text */
+  margin-bottom: 20px;
+  line-height: 1.5; /* Spacing between lines */
+  max-width: 600px;
+  text-align: left; /* Align text to the left for readability */
+}
+
+.spotify-playlist__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.spotify-playlist__iframe {
+  width: 80%;
+  height: auto;
+  min-height: 380px;
+  max-height: 500px;
+  border: none;
+}
+
+@media (max-width: 995px) {
+  .spotify-playlist__description {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .spotify-playlist {
+    padding: 20px;
+  }
+  .spotify-playlist__description {
+    font-size: 14px; /* Slightly smaller font for mobile devices */
+    padding: 0 10px; /* Padding on the sides */
+  }
+  .spotify-playlist__content {
+    width: 90%;
+  }
+
+  .spotify-playlist__photo {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 330px) {
+  .spotify-playlist__title {
+    font-size: 1.5em;
+  }
+}

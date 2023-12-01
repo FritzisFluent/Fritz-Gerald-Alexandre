@@ -5,7 +5,6 @@
 }
 
 .projects__title {
-  color: #ffd700; /* Metallic Gold */
   text-align: center;
   margin-bottom: 20px;
   font-size: 2em;
@@ -19,7 +18,8 @@
 }
 
 .project {
-  flex: 1;
+  background-color: #00af91;
+
   min-width: 280px; /* Minimum width of each card */
   max-width: 320px; /* Maximum width of each card */
   padding: 15px;
@@ -50,4 +50,15 @@
 .project__description {
   font-style: italic;
   margin-top: 5px;
+}
+
+/* media queries */
+
+@media (max-width: 415px) {
+  .project {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.8em; /* Adjust as needed */
+    width: 90%;
+  }
 }

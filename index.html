@@ -42,10 +42,11 @@
         </button>
         <ul class="nav-menu">
           <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#languages" class="nav-link">Languages</a></li>
+
           <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#playlist" class="nav-link">Playlist</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -53,7 +54,7 @@
       <!-- header content -->
       <div class="header__content">
         <img
-          src="./images/Fritz3.png"
+          src="./images/fritz_5.jpeg"
           alt="Fritz Gerald Alexandre"
           class="header__photo"
         />
@@ -62,7 +63,7 @@
 
           <p class="header__role">Multilingual Front-End Developer</p>
           <!-- Languages Proficiency -->
-          <div class="header-languages__content" id="languages">
+          <div class="header-languages__content">
             <ul class="languages__list">
               <!-- English -->
               <li class="language">
@@ -160,7 +161,7 @@
     <!-- Skills Section in the body -->
     <section id="skills" class="skills">
       <h2 class="skills__title">Skills</h2>
-      <div class="skills__grid">
+      <div class="skills-list__items">
         <!-- JavaScript -->
         <div class="skills__item">
           <i class="skills__icon fa-brands fa-js"></i>
@@ -225,10 +226,8 @@
           </li>
           <!-- Additional experiences -->
         </ul>
-      </div>
 
-      <!-- Education Subsection -->
-      <div class="resume__subsection">
+        <!-- Education Subsection -->
         <h3 class="resume__subtitle">Education</h3>
         <ul class="resume__list">
           <!-- Full Stack Web Development with TripleTen -->
@@ -308,6 +307,41 @@
             interface, enabling efficient book tracking and management.
           </p>
         </article>
+      </div>
+    </section>
+
+    <!-- Favorite Spotify Playlist Section -->
+    <!-- Favorite Spotify Playlist Section -->
+    <section id="playlist" class="spotify-playlist">
+      <h2 class="spotify-playlist__title">My Coding Playlist</h2>
+
+      <div class="spotify-playlist__content">
+        <img
+          src="./images/Fritz_playlist.png"
+          alt="Spotify Playlist"
+          class="spotify-playlist__photo"
+        />
+        <p class="spotify-playlist__description">
+          Music is not just a background noise for me; it's a companion that
+          fuels my creativity and focus during coding sessions. This playlist, a
+          carefully curated mix of tracks, resonates with my rhythm of thinking
+          and problem-solving. <br />
+
+          <br />Whether I'm untangling complex code or brainstorming new project
+          ideas, these tunes set the perfect ambiance, keeping me motivated and
+          inspired. Dive into my world of melodies that accompany each line of
+          code I write!
+        </p>
+
+        <!-- Spotify playlist embed code goes here -->
+        <iframe
+          class="spotify-playlist__iframe"
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/3fKOnwgR2v4Qc0DH09KJKz?utm_source=generator"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
       </div>
     </section>
 

@@ -8,8 +8,10 @@
 }
 
 .about {
+  background-color: #fff; /* Dark Navy Blue */
+  color: #020c1b;
   margin: 0 auto; /* Center the element horizontally */
-  margin-bottom: 15px;
+  padding: 20px;
   align-items: center;
   /* transition: background-color 0.3s ease;  Add transition effect */
   opacity: 0; /* Set initial opacity to 0 */
@@ -17,7 +19,6 @@
 }
 
 .about__content {
-  max-width: 800px;
   margin: 0 auto; /* Center the element horizontally */
   width: 80%;
   display: flex;
@@ -36,8 +37,6 @@
 
 .about__description {
   margin: 0 auto; /* Center the element horizontally */
-  font-size: 14px;
-  color: white;
   padding: 10px;
   font-weight: lighter;
 }
