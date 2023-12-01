@@ -42,11 +42,11 @@
     flex-direction: column; /* Stack the menu items vertically */
     align-items: flex-end; /* Align the menu items to the right */
     padding-right: 1em;
+    z-index: 2; /* Add this */
   }
 
   .nav-link {
     font-weight: bold;
-    color: #ffd700; /* Metallic Gold */
   }
 
   .nav-menu.show {

@@ -9,6 +9,12 @@
   margin-bottom: 20px;
 }
 
+.contact__description {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .contact__form {
   max-width: 500px;
   margin: 0 auto;
@@ -20,7 +26,6 @@
 }
 
 .form-group label {
-  color: #4caf50;
   display: block;
   margin-bottom: 5px;
 }
@@ -34,7 +39,7 @@
 }
 
 .contact__submit {
-  background-color: #4caf50;
+  background-color: #00af91;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -47,8 +52,7 @@
   background-color: #43a047;
 }
 
-@media (max-width: 768px) {
-  .contact__form {
-    width: 90%;
-  }
+.contact__description {
+  font-size: 14px;
+  text-align: left;
 }

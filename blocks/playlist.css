@@ -65,14 +65,22 @@
   }
 
   .spotify-playlist__photo {
-    width: 80%;
+    width: 50%;
     height: auto;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 330px) {
   .spotify-playlist__title {
     font-size: 1.5em;
+  }
+  .spotify-playlist__iframe {
+    width: 100%;
+  }
+
+  .spotify-playlist__photo {
+    width: 80%;
   }
 }

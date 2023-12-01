@@ -12,18 +12,3 @@
 @import url(../blocks/contact.css);
 @import url(../blocks/location.css);
 @import url(../blocks/footer.css);
-@import url(../blocks/logo.css);
-
-/* Responsive design */
-@media screen and (max-width: 768px) {
-  .header__content {
-    flex-direction: column;
-  }
-
-  .skills__item,
-  .experience__item,
-  .education__item,
-  .projects__item {
-    text-align: left;
-  }
-}

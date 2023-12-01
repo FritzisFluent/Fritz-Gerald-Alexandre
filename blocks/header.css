@@ -153,6 +153,12 @@
 }
 
 /* Responsive Design for Header */
+
+@media screen and (max-width: 768px) {
+  .header__content {
+    flex-direction: column;
+  }
+}
 @media (max-width: 600px) {
   .header {
     padding: 10px;
