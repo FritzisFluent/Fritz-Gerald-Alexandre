@@ -1,4 +1,4 @@
-# :star2: Fritz Gerald Alexandre's Portfolio Website :star2:
+## : Fritz Gerald Alexandre's Portfolio Website :
 
 ## :mag_right: Overview
 
