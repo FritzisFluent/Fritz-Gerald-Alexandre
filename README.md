@@ -1,15 +1,16 @@
-## : Fritz Gerald Alexandre's Portfolio Website :
+## :sparkles: Fritz Gerald Alexandre's Portfolio Website :sparkles:
 
 ## :mag_right: Overview
 
 Welcome to the GitHub repository for my personal portfolio website. This project is a reflection of my skills and journey as a Multilingual Front-End Developer.
+
+- `[link to GitHub page](https://fritzisfluent.github.io/Fritz-Gerald-Alexandre/)`
 
 ## :wrench: Technologies Used
 
 - `HTML5`
 - `CSS3`
 - `JavaScript`
-- `Google Maps API`
 
 ## :sparkles: Features
 
