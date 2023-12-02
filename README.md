@@ -1,10 +1,10 @@
-## :sparkles: Fritz Gerald Alexandre's Portfolio Website :sparkles:
+Fritz Gerald Alexandre's Portfolio Website
 
 ## :mag_right: Overview
 
-Welcome to the GitHub repository for my personal portfolio website. This project is a reflection of my skills and journey as a Multilingual Front-End Developer.
+Welcome to the GitHub repository for my personal portfolio website. This project is a reflection of my skills and journey as a current Full Stack Web Developer student at @TripleTen Bootcamp.
 
-- `[link to GitHub page](https://fritzisfluent.github.io/Fritz-Gerald-Alexandre/)`
+- [link to GitHub page](https://fritzisfluent.github.io/Fritz-Gerald-Alexandre/)
 
 ## :wrench: Technologies Used
 
