@@ -1,17 +1,18 @@
 /* PROJECTS SECTION */
 
 .projects-gallery {
+  background-color: white;
   text-align: center;
   padding: 20px;
   padding-bottom: 40px;
 }
 
-.projects-gallery:hover {
+.project-card:hover {
   background-color: darkblue;
 }
 
 .project__title {
-  color: white;
+  color: #020c1b;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
@@ -42,6 +43,10 @@
   padding: 15px;
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  background-color: darkblue;
 }
 
 .project-card .project-card__image {
@@ -79,6 +84,7 @@
   text-decoration: none;
   transform: scale(1.05);
   box-shadow: 0px 4px 8px 0px rgba(212, 175, 55, 0.6);
+  background-color: #00af91;
 }
 
 @media (max-width: 960px) {
