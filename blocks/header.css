@@ -116,6 +116,12 @@
   transition: width 0.4s ease-in-out; /* Add transition for smooth width change */
 }
 
+.progress:hover,
+.progress:focus {
+  transform: translateY(-2px);
+  transition: color 0.3s ease, pulse 0.3s ease;
+}
+
 .progress__bar--english,
 .progress__bar--french,
 .progress__bar--spanish,

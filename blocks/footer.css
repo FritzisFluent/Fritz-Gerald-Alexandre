@@ -1,8 +1,10 @@
 .footer {
-  color: #020c1b; /* Dark Navy Blue */
-  background-color: #fff;
   padding: 20px;
   text-align: center;
+}
+
+.footer:hover {
+  background-color: darkblue;
 }
 
 .footer__social-links {

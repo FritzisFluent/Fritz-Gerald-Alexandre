@@ -28,12 +28,21 @@
   font-size: 0.6em;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+  color: #ff9800; /* Metallic gold color for hover */
+  transform: translateY(-2px);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
   }
 
   .nav-menu {
+    width: 10%;
+    background-color: #fff;
     position: absolute; /* absolute */
     top: 10px;
     right: 10px;

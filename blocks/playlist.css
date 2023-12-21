@@ -1,13 +1,16 @@
 /* Spotify Playlist Section Styles */
 .spotify-playlist {
-  background-color: #f4f4f4; /* or any color that fits your theme */
   padding: 40px;
   text-align: center;
 }
 
+.spotify-playlist:hover {
+  background-color: darkblue;
+}
+
 .spotify-playlist__title {
   font-size: 2em;
-  color: #333; /* Dark color for the title */
+  color: #fff;
   margin-bottom: 20px;
 }
 
@@ -22,7 +25,7 @@
 .spotify-playlist__description {
   margin-left: 20px;
   font-size: 16px; /* Readable text size */
-  color: #666; /* Slightly lighter color for the text */
+  color: white;
   margin-bottom: 20px;
   line-height: 1.5; /* Spacing between lines */
   max-width: 600px;

@@ -1,24 +1,24 @@
 /* Contact Section Styles */
 .contact {
+  background-color: rgb(233, 231, 231);
   padding: 40px;
   text-align: center;
 }
 
-.contact:hover {
-  background-color: darkblue;
-}
-
 .contact__title {
+  color: #020c1b;
   font-size: 2em;
   margin-bottom: 20px;
 }
 
 .contact__description {
+  color: #020c1b;
   margin: 0 auto;
   margin-bottom: 40px;
 }
 
 .contact__form {
+  color: #020c1b;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -52,7 +52,7 @@
 }
 
 .contact__submit:hover {
-  background-color: #43a047;
+  background-color: #ff9800;
 }
 
 /* Media Queries */
