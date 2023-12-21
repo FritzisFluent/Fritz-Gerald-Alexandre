@@ -1,6 +1,7 @@
 /* PROJECTS SECTION */
 
 .projects-gallery {
+  margin: 0 auto;
   background-color: white;
   text-align: center;
   padding: 20px;
@@ -19,8 +20,8 @@
 }
 
 .projects-container {
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
@@ -38,7 +39,6 @@
 
 .project-card {
   background-color: #00af91;
-  min-width: 280px; /* Minimum width of each card */
   max-width: 320px; /* Maximum width of each card */
   padding: 15px;
   border-radius: 20px;
@@ -90,9 +90,14 @@
 @media (max-width: 960px) {
   .projects-container {
     flex-direction: column;
+    align-items: center;
   }
 
   .project-card {
     width: auto;
+  }
+
+  .project__title {
+    font-size: 1.3em;
   }
 }

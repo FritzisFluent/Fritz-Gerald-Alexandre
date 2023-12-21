@@ -69,12 +69,13 @@
 .resume__download-button {
   display: block;
   width: max-content;
-  margin: 20px auto;
+  margin: 0 auto;
+  margin-top: 30px;
   padding: 20px 15px;
   background-color: #00af91;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 30px;
   text-align: center;
 }
 

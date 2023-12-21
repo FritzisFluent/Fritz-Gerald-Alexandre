@@ -87,4 +87,8 @@
   .spotify-playlist__photo {
     width: 80%;
   }
+
+  .spotify-playlist__description {
+    padding: 0;
+  }
 }
