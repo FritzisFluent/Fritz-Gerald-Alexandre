@@ -31,6 +31,7 @@
   justify-content: center;
   gap: 20px;
   margin: 0 auto;
+  width: 80%;
   max-width: 800px;
   margin-bottom: 15px;
 }
@@ -38,11 +39,12 @@
 /* Header Photo Styles */
 .header__photo {
   margin: 0 auto; /* Center the element horizontally */
-  width: 250px;
+  width: 30%;
   height: auto;
-  border-radius: 50%;
+  border-radius: 80%;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  box-shadow: 0 10px 10px rgba(55, 214, 19, 0.2); /* Add shadow for depth */
 }
 
 /* Header Title Styles */
@@ -107,6 +109,7 @@
   overflow: hidden;
   margin-left: 10px;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Add inner shadow for depth */
+  box-shadow: 0 10px 10px rgba(55, 214, 19, 0.2); /* Add shadow for depth */
 }
 
 .progress__bar {
@@ -114,6 +117,7 @@
   height: 100%;
   border-radius: 10px;
   transition: width 0.4s ease-in-out; /* Add transition for smooth width change */
+  box-shadow: 0 10px 10px rgba(55, 214, 19, 0.2); /* Add shadow for depth */
 }
 
 .progress:hover,

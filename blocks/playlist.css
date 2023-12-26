@@ -17,9 +17,10 @@
 .spotify-playlist__photo {
   margin-right: 20px;
   margin-bottom: 20px;
-  width: 30%;
+  width: 20%;
   height: auto;
   border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(55, 214, 19, 0.2); /* Add shadow for depth */
 }
 
 .spotify-playlist__description {

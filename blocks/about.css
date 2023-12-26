@@ -20,6 +20,8 @@
 
 .about__content {
   margin: 0 auto; /* Center the element horizontally */
+  margin-right: 30px;
+  width: 80%;
   padding: 60px;
   display: flex;
   flex-direction: row;
