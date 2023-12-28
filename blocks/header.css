@@ -158,22 +158,18 @@
   .header-languages__content {
     width: 60%;
   }
-}
-
-/* Responsive Design for Header */
-
-@media screen and (max-width: 768px) {
   .header__content {
     flex-direction: column;
   }
 }
+
 @media (max-width: 600px) {
   .header {
     padding: 10px;
     font-size: 1.2em;
   }
   .header__role {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   .languages__list {
     font-size: 1.2em;
@@ -182,6 +178,12 @@
 
 @media (max-width: 320px) {
   .header__title {
-    font-size: 1.2em;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header__photo {
+    width: 80%;
   }
 }

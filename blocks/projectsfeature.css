@@ -27,16 +27,6 @@
   gap: 30px;
 }
 
-/*
- .project-card {
-  width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-*/
-
 .project-card {
   background-color: #00af91;
   max-width: 320px; /* Maximum width of each card */
@@ -95,6 +85,7 @@
 
   .project-card {
     width: auto;
+    padding: 30px;
   }
 
   .project__title {

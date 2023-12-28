@@ -79,4 +79,7 @@
   .about__content {
     padding: 0;
   }
+  .about__description {
+    font-size: 14px;
+  }
 }
