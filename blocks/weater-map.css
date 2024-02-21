@@ -1,0 +1,16 @@
+.footer__map iframe {
+  width: 100%; /* Ensure the map spans the width of its container */
+  height: 250px; /* Adjust height as needed */
+  border: 0;
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__map iframe {
+    height: 300px; /* Adjust for smaller screens */
+  }
+}
