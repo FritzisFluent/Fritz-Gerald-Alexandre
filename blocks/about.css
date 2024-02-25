@@ -8,46 +8,52 @@
 }
 
 .about {
-  background-color: #fff;
+  position: relative; /* Needed to position the pseudo-element */
+  background-image: url("../images/about-image.jpeg"); /* Set the about photo as background */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the background image */
   color: #020c1b;
-  margin: 0 auto; /* Center the element horizontally */
+  margin: 0 auto;
   padding: 20px;
   align-items: center;
-  /* transition: background-color 0.3s ease;  Add transition effect */
-  opacity: 0; /* Set initial opacity to 0 */
-  animation: fade-in 1s forwards; /* Apply fade-in animation */
+  display: flex; /* Changed to flex to use justify-content and align-items */
+  justify-content: center; /* Align content horizontally */
+  flex-direction: column; /* Align content vertically */
+  animation: fade-in 1s forwards;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+  z-index: -1; /* Ensure it's behind the content */
 }
 
 .about__content {
+  color: #fff; /* White text color */
   margin: 0 auto; /* Center the element horizontally */
-  margin-right: 30px;
   width: 80%;
   padding: 60px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column; /* Stack children vertically */
   justify-content: center;
   align-items: center;
   height: 100%;
+  z-index: 1; /* Ensure content is above the overlay */
 }
 
 .about__title {
   text-align: center;
-  font-size: 24px;
-  font-weight: bold;
   font-size: 2em;
+  font-weight: bold;
+  color: #fff; /* White text color for the title */
 }
 
-.about__photo {
-  width: 250px;
-  height: auto;
-  margin: 0 auto; /* Center the element horizontally */
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
+/* Removed .about__photo class as it may no longer be needed */
 
 .about__description {
   margin: 0 auto; /* Center the element horizontally */
@@ -55,9 +61,24 @@
   font-weight: lighter;
 }
 
-.about__description:last-child {
-  margin-left: 0;
+.about__learn-more {
+  padding: 10px 20px;
+  background-color: #00af91; /* Example button color */
+  color: #fff; /* Button text color set to white */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 20px auto 0; /* Center the button with margin */
+  display: block; /* Changed to block to enable horizontal centering */
+  width: max-content;
 }
+
+.about__learn-more:hover {
+  background-color: #c43d1f;
+}
+
+/* Ensure your media queries remain unchanged */
 
 /*media queries*/
 
