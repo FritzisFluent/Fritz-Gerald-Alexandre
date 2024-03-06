@@ -1,0 +1,20 @@
+.navbar__language {
+  /* Container for the language selector */
+  margin-left: auto; /* Aligns the language selector to the right */
+}
+
+.navbar__language-select {
+  background: white; /* White background for the dropdown */
+  color: #007bff; /* Blue color for the dropdown text */
+  border: none; /* Remove default border */
+  padding: 5px 10px; /* Padding for aesthetic spacing */
+  border-radius: 5px; /* Rounded corners to match your button styles */
+  font-size: 16px; /* Font size to match your navbar links */
+  cursor: pointer; /* Cursor to indicate it's clickable */
+  outline: none; /* Remove default focus outline */
+}
+
+.navbar__language-select:hover,
+.navbar__language-select:focus {
+  background: #f8f9fa; /* Slightly lighter background on hover/focus for feedback */
+}

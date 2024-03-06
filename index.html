@@ -12,26 +12,7 @@
     />
   </head>
 
-  <!-- To be added later for language API -->
-  <!-- Language API 
-      <select id="language-select">
-        <option value="en">
-          <span class="flag">🇬🇧</span><span class="language-text"></span>
-        </option>
-        <option value="es">
-          <span class="flag">🇩🇴</span><span class="language-text"></span>
-        </option>
-        <option value="fr">
-          <span class="flag">🇫🇷</span><span class="language-text"></span>
-        </option>
-        <option value="ht">
-          <span class="flag">🇭🇹</span><span class="language-text"></span>
-        </option>
-        <option value="pt">
-          <span class="flag">🇧🇷</span><span class="language-text"></span>
-        </option>
-      </select>
-      -->
+  <!-- Body Section -->
   <body class="page">
     <!-- Header Section -->
     <header class="header">
@@ -48,6 +29,17 @@
           <li><a href="#playlist" class="nav-link">Playlist</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+
+        <!-- Language Selector Dropdown -->
+        <div class="navbar__language">
+          <select id="language-select" class="navbar__language-select">
+            <option value="en">🇺🇸 English</option>
+            <option value="ht">🇭🇹 Kreyòl</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="es">🇩🇴 Español</option>
+            <option value="pt">🇧🇷 Português</option>
+          </select>
+        </div>
       </nav>
 
       <!-- header content -->
@@ -64,6 +56,15 @@
           <!-- Languages Proficiency -->
           <div class="header-languages__content">
             <ul class="languages__list">
+              <!-- English -->
+              <li class="language">
+                <span class="flag-icon">🇺🇸</span>
+                <!-- United States Flag Emoji for English -->
+                <div class="progress">
+                  <div class="progress__bar progress__bar--english"></div>
+                </div>
+              </li>
+
               <!-- Haitian Creole -->
               <li class="language">
                 <span class="flag-icon">🇭🇹</span>
@@ -80,14 +81,6 @@
                 <!-- France Flag Emoji for French -->
                 <div class="progress">
                   <div class="progress__bar progress__bar--french"></div>
-                </div>
-              </li>
-              <!-- English -->
-              <li class="language">
-                <span class="flag-icon">🇺🇸</span>
-                <!-- United States Flag Emoji for English -->
-                <div class="progress">
-                  <div class="progress__bar progress__bar--english"></div>
                 </div>
               </li>
               <!-- Spanish -->

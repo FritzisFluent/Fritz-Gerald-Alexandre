@@ -39,6 +39,7 @@
   justify-content: center;
   margin: auto;
   align-items: center;
+  flex-direction: row-reverse; /* Reverse the order of the elements */
 }
 
 .spotify-playlist__iframe {

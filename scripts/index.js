@@ -69,3 +69,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Language switcher
+
+document.addEventListener("DOMContentLoaded", function () {
+  const selectElement = document.getElementById("language-select");
+
+  selectElement.addEventListener("change", function (event) {
+    const newLanguage = event.target.value;
+    updateContentToLanguage(newLanguage);
+  });
+});
+
+function updateContentToLanguage(lang) {
+  // Logic to update the content to the selected language
+  // For demonstration, this function needs to be implemented
+  console.log("Update content to:", lang);
+  // You would typically fetch the translated content and update the DOM elements accordingly
+}
