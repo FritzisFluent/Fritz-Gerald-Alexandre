@@ -1,89 +1,83 @@
-// Select the hamburger button
-var hamburger = document.querySelector(".hamburger");
-var navMenu = document.querySelector(".nav-menu");
+// ES6+ syntax and modular organization
 
-hamburger.addEventListener("click", function () {
-  navMenu.classList.toggle("show");
-  if (navMenu.classList.contains("show")) {
-    hamburger.innerHTML = '<i class="fas fa-times"></i>'; // X icon
-  } else {
-    hamburger.innerHTML = '<i class="fas fa-bars"></i>'; // Hamburger icon
-  }
-});
+// Hamburger Menu Toggle
+const toggleHamburgerMenu = () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
 
-// Slide-in effect for the languages section.
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("slideIn");
-    } else {
-      entry.target.classList.remove("slideIn");
-    }
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+    hamburger.innerHTML = navMenu.classList.contains("show")
+      ? '<i class="fas fa-times"></i>' // X icon
+      : '<i class="fas fa-bars"></i>'; // Hamburger icon
   });
-});
+};
 
-document.querySelectorAll(".language").forEach((language) => {
-  observer.observe(language);
-});
+// Slide-in Effect for Languages Section
+const slideInLanguages = () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("slideIn", entry.isIntersecting);
+    });
+  });
 
-// Scroll down effect for the skills section.
-document.addEventListener("DOMContentLoaded", (event) => {
-  const skillsSection = document.querySelector(".skills"); // Select the skills section
+  document.querySelectorAll(".language").forEach((language) => {
+    observer.observe(language);
+  });
+};
+
+// Scroll Down Effect for Skills Section
+const scrollDownSkills = () => {
+  const skillsSection = document.querySelector(".skills");
   const observer = new IntersectionObserver(
-    (entries, observer) => {
+    (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("skills--visible"); // Add class when in view
-          observer.unobserve(entry.target); // Optional: Stop observing after it becomes visible
+          entry.target.classList.add("skills--visible");
+          observer.unobserve(entry.target);
         }
       });
     },
     { threshold: 0.1 }
-  ); // Trigger when 10% of the skills section is visible
+  );
 
-  skillsSection.style.opacity = 0; // Set initial opacity to 0 for fade-in effect
-  observer.observe(skillsSection); // Observe the skills section
-});
+  skillsSection.style.opacity = 0;
+  observer.observe(skillsSection);
+};
 
-// Accordion Layout javascript code for the education section
-document.addEventListener("DOMContentLoaded", function () {
-  const accordionButtons = document.querySelectorAll(".accordion__button");
-
-  accordionButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      // Toggle the "active" class on the button
-      this.classList.toggle("active");
-
-      // Select the next sibling element (the accordion content)
-      const accordionContent = this.nextElementSibling;
-
-      // Check if the accordion content is currently open
-      if (accordionContent.style.maxHeight) {
-        // Accordion is open, so close it
-        accordionContent.style.maxHeight = null;
-      } else {
-        // Accordion is closed, so open it
-        accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
-      }
+// Accordion Layout for Education Section
+const setupAccordion = () => {
+  document.querySelectorAll(".accordion__button").forEach((button) => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("active");
+      const accordionContent = button.nextElementSibling;
+      accordionContent.style.maxHeight = accordionContent.style.maxHeight
+        ? null
+        : `${accordionContent.scrollHeight}px`;
     });
   });
-});
+};
 
-// Language switcher
-
-document.addEventListener("DOMContentLoaded", function () {
+// Language Switcher Functionality
+const setupLanguageSwitcher = () => {
   const selectElement = document.getElementById("language-select");
 
-  selectElement.addEventListener("change", function (event) {
+  selectElement.addEventListener("change", (event) => {
     const newLanguage = event.target.value;
-    updateContentToLanguage(newLanguage);
+    console.log("Update content to:", newLanguage);
+    // Implementation to update the DOM elements with new language content goes here
   });
-});
+};
 
-function updateContentToLanguage(lang) {
-  // Logic to update the content to the selected language
-  // For demonstration, this function needs to be implemented
-  console.log("Update content to:", lang);
-  // You would typically fetch the translated content and update the DOM elements accordingly
-}
+// Initialization Function
+const initialize = () => {
+  document.addEventListener("DOMContentLoaded", () => {
+    toggleHamburgerMenu();
+    slideInLanguages();
+    scrollDownSkills();
+    setupAccordion();
+    setupLanguageSwitcher();
+  });
+};
+
+initialize();
