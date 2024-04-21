@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  padding-right: 20px;
+  padding-right: 10px;
   justify-content: center;
   color: #fff;
   z-index: 3;
@@ -12,7 +12,8 @@
   background: none;
   border: none;
   color: #fff;
-  margin-left: auto; /* Push the hamburger to the right */
+  margin: 0;
+  padding-left: 10px;
 }
 
 .nav-menu {

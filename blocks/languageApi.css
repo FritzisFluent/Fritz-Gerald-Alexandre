@@ -7,7 +7,7 @@
   background: white; /* White background for the dropdown */
   color: #007bff; /* Blue color for the dropdown text */
   border: none; /* Remove default border */
-  padding: 5px 10px; /* Padding for aesthetic spacing */
+
   border-radius: 5px; /* Rounded corners to match your button styles */
   font-size: 16px; /* Font size to match your navbar links */
   cursor: pointer; /* Cursor to indicate it's clickable */
